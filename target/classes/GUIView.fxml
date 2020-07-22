@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.GUIController">
+   <children>
+      <Label alignment="CENTER" layoutX="293.0" layoutY="26.0" text="BlogScraper" textFill="#cccccc" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dataView" layoutX="182.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #AAAAAA;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="45.0">
+        <columns>
+          <TableColumn fx:id="dataSource" prefWidth="100.0" text="Source" />
+          <TableColumn fx:id="articlesScraped" prefWidth="100.0" text="Articles Scraped" />
+            <TableColumn fx:id="articlesServed" prefWidth="100.0" text="Articles Served" />
+        </columns>
+      </TableView>
+      <Button fx:id="scrapeStop" layoutX="517.0" layoutY="352.0" mnemonicParsing="false" text="Stop Scraping" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="scrapeStart" layoutX="450.0" layoutY="352.0" mnemonicParsing="false" text="Start Scraping" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

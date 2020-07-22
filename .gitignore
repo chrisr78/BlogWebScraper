@@ -1,0 +1,11 @@
+/src/main/
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gx
+*.rar
+.idea
+*.iml
